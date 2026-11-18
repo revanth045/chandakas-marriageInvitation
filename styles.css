@@ -69,3 +69,8 @@
 .gallery-four .gallery-photo:first-child{grid-column:span 2}
 .gallery-four .gallery-photo:first-child img{object-fit:contain}
 @media(max-width:700px){.gallery-four{grid-template-columns:repeat(2,minmax(0,1fr))}.gallery-four .gallery-photo:first-child{grid-column:span 2}}
+
+/* Four portrait images share one row on desktop and two columns on mobile. */
+.gallery-four{grid-template-columns:repeat(4,minmax(0,1fr))}
+.gallery-four .gallery-photo:first-child{grid-column:auto}
+@media(max-width:700px){.gallery-four{grid-template-columns:repeat(2,minmax(0,1fr))}.gallery-four .gallery-photo:first-child{grid-column:auto}}
